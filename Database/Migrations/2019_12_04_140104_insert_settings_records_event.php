@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 use Modules\Portal\Entities\Setting;
 
-class InsertSettingsRecords extends Migration
+class InsertSettingsRecordsEvent extends Migration
 {
     /**
      * Run the migrations.
