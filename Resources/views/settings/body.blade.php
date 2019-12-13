@@ -27,7 +27,7 @@
 {{ Form::open(['route' => ['settingevent.pastevent.store', $event_setting->event]]) }}
 <div class="row">
 	<div class="col-md-5">
-		{{ Form::text('title', null, ['class' => 'form-control', 'placeholder' => 'Título do evento anterior']) }}
+		{{ Form::text('title', null, ['class' => 'form-control', 'placeholder' => 'Título+Data (Evento Anterior)']) }}
 	</div>
 	<div class="col-md-5">
 		{{ Form::number('total', null, ['class' => 'form-control', 'step' => '0.0.1', 'placeholder' => 'Total vendido']) }}
