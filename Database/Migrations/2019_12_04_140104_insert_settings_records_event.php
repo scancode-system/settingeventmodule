@@ -14,7 +14,7 @@ class InsertSettingsRecordsEvent extends Migration
      */
     public function up()
     {
-        Setting::create(['module' => 'SettingEvent', 'alias' => 'Evento']);
+        Setting::create(['module' => 'SettingEvent', 'alias' => 'Evento', 'import' => 'Event@setting']);
     }
 
     /**
