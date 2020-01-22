@@ -16,7 +16,7 @@ class PastEventRequest extends FormRequest
 
         return [
             'title' => 'required|string|max:255',
-            'total' => 'required|numeric|min:0|regex:/^\d+(\.\d{1,2})?$/'
+            'total' => 'required|numeric|min:0|max:999999999|regex:/^\d+(\.\d{1,2})?$/'
         ];
     }
 
