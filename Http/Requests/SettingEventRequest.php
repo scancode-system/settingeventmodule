@@ -14,7 +14,9 @@ class SettingEventRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required'
+            'title' => 'required|string|max:191',
+            'start_end_date' => 'required',
+            'goal' => 'required|numeric|min:0|max:99999999|regex:/^\d+(\.\d{1,2})?$/'
         ];
     }
 
@@ -28,7 +30,7 @@ class SettingEventRequest extends FormRequest
         return true;
     }
 
-     protected function prepareForValidation()
+    protected function prepareForValidation()
     {
         $start_end_date = $this->start_end_date;
         $start_end_date = str_replace(' ', '', $start_end_date);

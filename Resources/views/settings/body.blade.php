@@ -4,7 +4,7 @@
 	{{ Form::text('title', null, ['class' => 'form-control']) }}
 </div>
 <fieldset class="form-group">
-	{{ Form::label('company_name', 'Data do Evento') }}
+	{{ Form::label('start_end_date', 'Data do Evento') }}
 	<div class="input-group">
 		<span class="input-group-prepend">
 			<span class="input-group-text">
@@ -16,7 +16,7 @@
 </fieldset>
 <div class="form-group">
 	{{ Form::label('goal', 'Meta Geral') }}
-	{{ Form::number('goal', null, ['class' => 'form-control']) }}
+	{{ Form::number('goal', null, ['class' => 'form-control', 'step' => '0.01']) }}
 </div>
 
 {{ Form::button('<i class="fa fa-save"></i><span>Salvar</span>', ['class' => 'btn btn-brand btn-primary', 'type' => 'submit']) }}
